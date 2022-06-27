@@ -70,12 +70,48 @@ def generate_test_data(nbytes, width=0):
         ]
     else:
         base_list = [
-            0xBF80000040000000,
+            0xBF8003044003B0F0,
             0x40400000C0800000,
             0xDEADBEEFCAFEBABE,
             0xABAD1DEA1337D00D,
         ]
 
+    return [e for _ in range(ceil_div(nquads, len(base_list))) for e in base_list][
+        :nquads
+    ]
+
+
+def generate_indexed_data(nbytes, width):
+    """Generate indexed data."""
+    if width == 8:
+        base_list = [
+            0x0706050403020100,
+        ]
+    elif width == 16:
+        base_list = [
+            0x0003000200010000,
+            0x0007000600050004,
+        ]
+    elif width == 32:
+        base_list = [
+            0x0000000100000000,
+            0x0000000300000002,
+            0x0000000500000004,
+            0x0000000700000006,
+        ]
+    else:
+        base_list = [
+            0x0000000000000000,
+            0x0000000000000001,
+            0x0000000000000002,
+            0x0000000000000003,
+            0x0000000000000004,
+            0x0000000000000005,
+            0x0000000000000006,
+            0x0000000000000007,
+        ]
+
+    nquads = ceil_div(nbytes, 8)
     return [e for _ in range(ceil_div(nquads, len(base_list))) for e in base_list][
         :nquads
     ]
@@ -144,6 +180,7 @@ def floathex(f, width):
     elif width == 64:
         return int(hex(struct.unpack("<Q", struct.pack("<d", f))[0]), 0)
     return 0
+
 
 def cast_insts(reg, width, signed=True):
     """Generates instructions to convert :reg to :width wide, :signed or unsigned."""
