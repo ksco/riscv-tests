@@ -10,8 +10,9 @@ MAKEFRAG_TEMPLATE = """
 rv64uv_sc_tests = \\
 {data}
 
-rv64uv_p_tests = $(addprefix rv64uv-p-, $(rv64uv_sc_tests))
-rv64uv_v_tests = $(addprefix rv64uv-v-, $(rv64uv_sc_tests))
+# rv64uv_p_tests = $(addprefix rv64uv-p-, $(rv64uv_sc_tests))
+# rv64uv_v_tests = $(addprefix rv64uv-v-, $(rv64uv_sc_tests))
+rv64uv_ps_tests = $(addprefix rv64uv-ps-, $(rv64uv_sc_tests))
 """
 
 
