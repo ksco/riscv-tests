@@ -63,16 +63,11 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 16
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e32,m4,tu,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfsgnjx.vf v4, v8, f2, v0.t
+  vfsgnjx.vf v4, v8, f2
 
   li t0, -1
   vsetvli t1, t0, e32,m4,ta,ma
@@ -106,11 +101,16 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 16
-  vsetvli t1, t0, e32,m4,tu,ma
+  vsetvli t1, t0, e32,m4,ta,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfsgnjx.vf v4, v8, f2
+  vfsgnjx.vf v4, v8, f2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e32,m4,ta,ma
@@ -225,16 +225,11 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 31
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e32,m4,tu,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfsgnjx.vf v4, v8, f2, v0.t
+  vfsgnjx.vf v4, v8, f2
 
   li t0, -1
   vsetvli t1, t0, e32,m4,ta,ma
@@ -268,11 +263,16 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 31
-  vsetvli t1, t0, e32,m4,tu,ma
+  vsetvli t1, t0, e32,m4,ta,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfsgnjx.vf v4, v8, f2
+  vfsgnjx.vf v4, v8, f2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e32,m4,ta,ma
@@ -387,16 +387,11 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 32
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e32,m4,tu,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfsgnjx.vf v4, v8, f2, v0.t
+  vfsgnjx.vf v4, v8, f2
 
   li t0, -1
   vsetvli t1, t0, e32,m4,ta,ma
@@ -430,11 +425,16 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 32
-  vsetvli t1, t0, e32,m4,tu,ma
+  vsetvli t1, t0, e32,m4,ta,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfsgnjx.vf v4, v8, f2
+  vfsgnjx.vf v4, v8, f2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e32,m4,ta,ma

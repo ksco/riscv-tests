@@ -50,15 +50,10 @@ RVTEST_CODE_BEGIN
   vle64.v v1, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 2
-  vsetvli t1, t0, e64,m1,ta,ma
+  vsetvli t1, t0, e64,m1,tu,ma
   li t2, 1
-  vand.vx v1, v2, t2, v0.t
+  vand.vx v1, v2, t2
 
   li t0, -1
   vsetvli t1, t0, e64,m1,ta,ma
@@ -80,10 +75,15 @@ RVTEST_CODE_BEGIN
   vle64.v v1, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 2
-  vsetvli t1, t0, e64,m1,tu,ma
+  vsetvli t1, t0, e64,m1,ta,ma
   li t2, 1
-  vand.vx v1, v2, t2
+  vand.vx v1, v2, t2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e64,m1,ta,ma
@@ -160,15 +160,10 @@ RVTEST_CODE_BEGIN
   vle64.v v1, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 3
-  vsetvli t1, t0, e64,m1,ta,ma
+  vsetvli t1, t0, e64,m1,tu,ma
   li t2, 1
-  vand.vx v1, v2, t2, v0.t
+  vand.vx v1, v2, t2
 
   li t0, -1
   vsetvli t1, t0, e64,m1,ta,ma
@@ -190,10 +185,15 @@ RVTEST_CODE_BEGIN
   vle64.v v1, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 3
-  vsetvli t1, t0, e64,m1,tu,ma
+  vsetvli t1, t0, e64,m1,ta,ma
   li t2, 1
-  vand.vx v1, v2, t2
+  vand.vx v1, v2, t2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e64,m1,ta,ma
@@ -270,15 +270,10 @@ RVTEST_CODE_BEGIN
   vle64.v v1, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 4
-  vsetvli t1, t0, e64,m1,ta,ma
+  vsetvli t1, t0, e64,m1,tu,ma
   li t2, 1
-  vand.vx v1, v2, t2, v0.t
+  vand.vx v1, v2, t2
 
   li t0, -1
   vsetvli t1, t0, e64,m1,ta,ma
@@ -300,10 +295,15 @@ RVTEST_CODE_BEGIN
   vle64.v v1, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 4
-  vsetvli t1, t0, e64,m1,tu,ma
+  vsetvli t1, t0, e64,m1,ta,ma
   li t2, 1
-  vand.vx v1, v2, t2
+  vand.vx v1, v2, t2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e64,m1,ta,ma

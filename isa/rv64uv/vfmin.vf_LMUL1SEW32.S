@@ -51,16 +51,11 @@ RVTEST_CODE_BEGIN
   vle32.v v1, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 4
-  vsetvli t1, t0, e32,m1,ta,ma
+  vsetvli t1, t0, e32,m1,tu,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfmin.vf v1, v2, f2, v0.t
+  vfmin.vf v1, v2, f2
 
   li t0, -1
   vsetvli t1, t0, e32,m1,ta,ma
@@ -82,11 +77,16 @@ RVTEST_CODE_BEGIN
   vle32.v v1, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 4
-  vsetvli t1, t0, e32,m1,tu,ma
+  vsetvli t1, t0, e32,m1,ta,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfmin.vf v1, v2, f2
+  vfmin.vf v1, v2, f2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e32,m1,ta,ma
@@ -165,16 +165,11 @@ RVTEST_CODE_BEGIN
   vle32.v v1, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 7
-  vsetvli t1, t0, e32,m1,ta,ma
+  vsetvli t1, t0, e32,m1,tu,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfmin.vf v1, v2, f2, v0.t
+  vfmin.vf v1, v2, f2
 
   li t0, -1
   vsetvli t1, t0, e32,m1,ta,ma
@@ -196,11 +191,16 @@ RVTEST_CODE_BEGIN
   vle32.v v1, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 7
-  vsetvli t1, t0, e32,m1,tu,ma
+  vsetvli t1, t0, e32,m1,ta,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfmin.vf v1, v2, f2
+  vfmin.vf v1, v2, f2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e32,m1,ta,ma
@@ -279,16 +279,11 @@ RVTEST_CODE_BEGIN
   vle32.v v1, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 8
-  vsetvli t1, t0, e32,m1,ta,ma
+  vsetvli t1, t0, e32,m1,tu,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfmin.vf v1, v2, f2, v0.t
+  vfmin.vf v1, v2, f2
 
   li t0, -1
   vsetvli t1, t0, e32,m1,ta,ma
@@ -310,11 +305,16 @@ RVTEST_CODE_BEGIN
   vle32.v v1, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 8
-  vsetvli t1, t0, e32,m1,tu,ma
+  vsetvli t1, t0, e32,m1,ta,ma
   li t2, 1065353216
   fmv.w.x f2, t2
-  vfmin.vf v1, v2, f2
+  vfmin.vf v1, v2, f2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e32,m1,ta,ma

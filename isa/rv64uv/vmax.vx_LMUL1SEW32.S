@@ -50,6 +50,31 @@ RVTEST_CODE_BEGIN
   vle32.v v1, (a2)
 
   
+  li t0, 4
+  vsetvli t1, t0, e32,m1,tu,ma
+  li t2, 1
+  vmax.vx v1, v2, t2
+
+  li t0, -1
+  vsetvli t1, t0, e32,m1,ta,ma
+  la a1, res
+  vse32.v v1, (a1)
+  la a2, sres
+
+
+  TEST_CASE(6, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(7, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(8, t0, 0x3fffffff8, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(9, t0, 0x700000000, ld t0, 0(a1); addi a1, a1, 8)
+
+
+  li t0, -1
+  vsetvli t1, t0, e32,m1,ta,ma
+  la a2, tdat
+  vle32.v v2, (a2)
+  vle32.v v1, (a2)
+
+  
   li t0, -1
   vsetvli t1, t0, e8,m1,ta,ma
   la a3, mask
@@ -67,33 +92,8 @@ RVTEST_CODE_BEGIN
   la a2, sres
 
 
-  TEST_CASE(6, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(7, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(8, t0, 0x3fffffff8, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(9, t0, 0x700000000, ld t0, 0(a1); addi a1, a1, 8)
-
-
-  li t0, -1
-  vsetvli t1, t0, e32,m1,ta,ma
-  la a2, tdat
-  vle32.v v2, (a2)
-  vle32.v v1, (a2)
-
-  
-  li t0, 4
-  vsetvli t1, t0, e32,m1,tu,ma
-  li t2, 1
-  vmax.vx v1, v2, t2
-
-  li t0, -1
-  vsetvli t1, t0, e32,m1,ta,ma
-  la a1, res
-  vse32.v v1, (a1)
-  la a2, sres
-
-
-  TEST_CASE(10, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(11, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(10, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(11, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(12, t0, 0x3fffffff8, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(13, t0, 0x700000000, ld t0, 0(a1); addi a1, a1, 8)
 
@@ -160,6 +160,31 @@ RVTEST_CODE_BEGIN
   vle32.v v1, (a2)
 
   
+  li t0, 7
+  vsetvli t1, t0, e32,m1,tu,ma
+  li t2, 1
+  vmax.vx v1, v2, t2
+
+  li t0, -1
+  vsetvli t1, t0, e32,m1,ta,ma
+  la a1, res
+  vse32.v v1, (a1)
+  la a2, sres
+
+
+  TEST_CASE(22, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(23, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(24, t0, 0x300000001, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(25, t0, 0x700000001, ld t0, 0(a1); addi a1, a1, 8)
+
+
+  li t0, -1
+  vsetvli t1, t0, e32,m1,ta,ma
+  la a2, tdat
+  vle32.v v2, (a2)
+  vle32.v v1, (a2)
+
+  
   li t0, -1
   vsetvli t1, t0, e8,m1,ta,ma
   la a3, mask
@@ -177,33 +202,8 @@ RVTEST_CODE_BEGIN
   la a2, sres
 
 
-  TEST_CASE(22, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(23, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(24, t0, 0x300000001, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(25, t0, 0x700000001, ld t0, 0(a1); addi a1, a1, 8)
-
-
-  li t0, -1
-  vsetvli t1, t0, e32,m1,ta,ma
-  la a2, tdat
-  vle32.v v2, (a2)
-  vle32.v v1, (a2)
-
-  
-  li t0, 7
-  vsetvli t1, t0, e32,m1,tu,ma
-  li t2, 1
-  vmax.vx v1, v2, t2
-
-  li t0, -1
-  vsetvli t1, t0, e32,m1,ta,ma
-  la a1, res
-  vse32.v v1, (a1)
-  la a2, sres
-
-
-  TEST_CASE(26, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(27, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(26, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(27, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(28, t0, 0x300000001, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(29, t0, 0x700000001, ld t0, 0(a1); addi a1, a1, 8)
 
@@ -270,6 +270,31 @@ RVTEST_CODE_BEGIN
   vle32.v v1, (a2)
 
   
+  li t0, 8
+  vsetvli t1, t0, e32,m1,tu,ma
+  li t2, 1
+  vmax.vx v1, v2, t2
+
+  li t0, -1
+  vsetvli t1, t0, e32,m1,ta,ma
+  la a1, res
+  vse32.v v1, (a1)
+  la a2, sres
+
+
+  TEST_CASE(38, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(39, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(40, t0, 0x300000001, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(41, t0, 0x700000001, ld t0, 0(a1); addi a1, a1, 8)
+
+
+  li t0, -1
+  vsetvli t1, t0, e32,m1,ta,ma
+  la a2, tdat
+  vle32.v v2, (a2)
+  vle32.v v1, (a2)
+
+  
   li t0, -1
   vsetvli t1, t0, e8,m1,ta,ma
   la a3, mask
@@ -287,33 +312,8 @@ RVTEST_CODE_BEGIN
   la a2, sres
 
 
-  TEST_CASE(38, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(39, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(40, t0, 0x300000001, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(41, t0, 0x700000001, ld t0, 0(a1); addi a1, a1, 8)
-
-
-  li t0, -1
-  vsetvli t1, t0, e32,m1,ta,ma
-  la a2, tdat
-  vle32.v v2, (a2)
-  vle32.v v1, (a2)
-
-  
-  li t0, 8
-  vsetvli t1, t0, e32,m1,tu,ma
-  li t2, 1
-  vmax.vx v1, v2, t2
-
-  li t0, -1
-  vsetvli t1, t0, e32,m1,ta,ma
-  la a1, res
-  vse32.v v1, (a1)
-  la a2, sres
-
-
-  TEST_CASE(42, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(43, t0, 0x100000001, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(42, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(43, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(44, t0, 0x300000001, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(45, t0, 0x700000001, ld t0, 0(a1); addi a1, a1, 8)
 

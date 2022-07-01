@@ -78,15 +78,10 @@ RVTEST_CODE_BEGIN
   vle64.v v8, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 16
-  vsetvli t1, t0, e64,m8,ta,ma
+  vsetvli t1, t0, e64,m8,tu,ma
   li t2, 1
-  vdivu.vx v8, v16, t2, v0.t
+  vdivu.vx v8, v16, t2
 
   li t0, -1
   vsetvli t1, t0, e64,m8,ta,ma
@@ -136,10 +131,15 @@ RVTEST_CODE_BEGIN
   vle64.v v8, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 16
-  vsetvli t1, t0, e64,m8,tu,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   li t2, 1
-  vdivu.vx v8, v16, t2
+  vdivu.vx v8, v16, t2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e64,m8,ta,ma
@@ -300,15 +300,10 @@ RVTEST_CODE_BEGIN
   vle64.v v8, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 31
-  vsetvli t1, t0, e64,m8,ta,ma
+  vsetvli t1, t0, e64,m8,tu,ma
   li t2, 1
-  vdivu.vx v8, v16, t2, v0.t
+  vdivu.vx v8, v16, t2
 
   li t0, -1
   vsetvli t1, t0, e64,m8,ta,ma
@@ -358,10 +353,15 @@ RVTEST_CODE_BEGIN
   vle64.v v8, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 31
-  vsetvli t1, t0, e64,m8,tu,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   li t2, 1
-  vdivu.vx v8, v16, t2
+  vdivu.vx v8, v16, t2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e64,m8,ta,ma
@@ -522,15 +522,10 @@ RVTEST_CODE_BEGIN
   vle64.v v8, (a2)
 
   
-  li t0, -1
-  vsetvli t1, t0, e8,m1,ta,ma
-  la a3, mask
-  vle8.v v0, (a3)
-
   li t0, 32
-  vsetvli t1, t0, e64,m8,ta,ma
+  vsetvli t1, t0, e64,m8,tu,ma
   li t2, 1
-  vdivu.vx v8, v16, t2, v0.t
+  vdivu.vx v8, v16, t2
 
   li t0, -1
   vsetvli t1, t0, e64,m8,ta,ma
@@ -580,10 +575,15 @@ RVTEST_CODE_BEGIN
   vle64.v v8, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 32
-  vsetvli t1, t0, e64,m8,tu,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   li t2, 1
-  vdivu.vx v8, v16, t2
+  vdivu.vx v8, v16, t2, v0.t
 
   li t0, -1
   vsetvli t1, t0, e64,m8,ta,ma
