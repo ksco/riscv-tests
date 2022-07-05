@@ -7,7 +7,7 @@
 # vmsbc.vv_LMUL1SEW32.S
 #-----------------------------------------------------------------------------
 #
-# Test vmsbc.vv instructions.
+# Test vmsbc.vv insnructions.
 # With LMUL=1, SEW=32
 #
 
@@ -23,8 +23,12 @@ RVTEST_CODE_BEGIN
   vsetvli t1, t0, e32,m1,ta,ma
   la a2, tdat
   vle32.v v2, (a2)
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v1, (a2)
   la a2, tdat+8
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v3, (a2)
 
   
@@ -36,20 +40,19 @@ RVTEST_CODE_BEGIN
   vsetvli t1, t0, e32,m1,ta,ma
   la a1, res
   vse32.v v1, (a1)
-  la a2, sres
 
-  TEST_CASE(2, t0, 0xc, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(3, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(4, t0, 0x3fffffff8, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(5, t0, 0x700000000, ld t0, 0(a1); addi a1, a1, 8)
-
+  addi x0, x1, 2
 
   li t0, -1
   vsetvli t1, t0, e32,m1,ta,ma
   la a2, tdat
   vle32.v v2, (a2)
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v1, (a2)
   la a2, tdat+8
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v3, (a2)
 
   
@@ -61,21 +64,19 @@ RVTEST_CODE_BEGIN
   vsetvli t1, t0, e32,m1,ta,ma
   la a1, res
   vse32.v v1, (a1)
-  la a2, sres
 
-
-  TEST_CASE(6, t0, 0xc, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(7, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(8, t0, 0x3fffffff8, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(9, t0, 0x700000000, ld t0, 0(a1); addi a1, a1, 8)
-
+  addi x0, x1, 2
 
   li t0, -1
   vsetvli t1, t0, e32,m1,ta,ma
   la a2, tdat
   vle32.v v2, (a2)
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v1, (a2)
   la a2, tdat+8
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v3, (a2)
 
   
@@ -87,21 +88,19 @@ RVTEST_CODE_BEGIN
   vsetvli t1, t0, e32,m1,ta,ma
   la a1, res
   vse32.v v1, (a1)
-  la a2, sres
 
-
-  TEST_CASE(10, t0, 0x6c, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(11, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(12, t0, 0x3fffffff8, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(13, t0, 0x700000000, ld t0, 0(a1); addi a1, a1, 8)
-
+  addi x0, x1, 2
 
   li t0, -1
   vsetvli t1, t0, e32,m1,ta,ma
   la a2, tdat
   vle32.v v2, (a2)
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v1, (a2)
   la a2, tdat+8
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v3, (a2)
 
   
@@ -113,21 +112,19 @@ RVTEST_CODE_BEGIN
   vsetvli t1, t0, e32,m1,ta,ma
   la a1, res
   vse32.v v1, (a1)
-  la a2, sres
 
-
-  TEST_CASE(14, t0, 0x6c, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(15, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(16, t0, 0x3fffffff8, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(17, t0, 0x700000000, ld t0, 0(a1); addi a1, a1, 8)
-
+  addi x0, x1, 2
 
   li t0, -1
   vsetvli t1, t0, e32,m1,ta,ma
   la a2, tdat
   vle32.v v2, (a2)
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v1, (a2)
   la a2, tdat+8
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v3, (a2)
 
   
@@ -139,21 +136,19 @@ RVTEST_CODE_BEGIN
   vsetvli t1, t0, e32,m1,ta,ma
   la a1, res
   vse32.v v1, (a1)
-  la a2, sres
 
-
-  TEST_CASE(18, t0, 0xec, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(19, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(20, t0, 0x3fffffff8, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(21, t0, 0x700000000, ld t0, 0(a1); addi a1, a1, 8)
-
+  addi x0, x1, 2
 
   li t0, -1
   vsetvli t1, t0, e32,m1,ta,ma
   la a2, tdat
   vle32.v v2, (a2)
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v1, (a2)
   la a2, tdat+8
+
+  vsetvli t1, t0, e32,m1,ta,ma
   vle32.v v3, (a2)
 
   
@@ -165,17 +160,11 @@ RVTEST_CODE_BEGIN
   vsetvli t1, t0, e32,m1,ta,ma
   la a1, res
   vse32.v v1, (a1)
-  la a2, sres
+
+  addi x0, x1, 2
 
 
-  TEST_CASE(22, t0, 0xec, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(23, t0, 0x1, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(24, t0, 0x3fffffff8, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(25, t0, 0x700000000, ld t0, 0(a1); addi a1, a1, 8)
-
-
-
-
+  TEST_CASE(2, x0, 0x0)
   TEST_PASSFAIL
 
 RVTEST_CODE_END
@@ -184,10 +173,7 @@ RVTEST_CODE_END
 RVTEST_DATA_BEGIN
 
 res:
-  .zero 40
-
-sres:
-  .zero 40
+  .zero 144
 
 tdat:
   .quad 0x1
@@ -195,6 +181,10 @@ tdat:
   .quad 0x3fffffff8
   .quad 0x700000000
   .quad 0xffffffffefffffff
+  .quad 0x100000000
+  .quad 0xefffffffffffffff
+  .quad 0x100000000
+  .quad 0x1
 
 mask:
   .quad 0x5555555555555555
