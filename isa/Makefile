@@ -127,4 +127,4 @@ clean:
 	rm -rf $(tests_hex)
 	rm -rf $(tests_out)
 	rm -rf $(tests32_out)
-	rm -rf rv64uv
+	# rm -rf rv64uv

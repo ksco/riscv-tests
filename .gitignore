@@ -12,4 +12,4 @@
 /config.log
 /config.status
 /build
-/isa/rv64uv
+/isa/rv64ux*
