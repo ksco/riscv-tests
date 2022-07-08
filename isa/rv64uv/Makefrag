@@ -2571,6 +2571,20 @@ rv64uv_sc_tests = \
   vse8.v_LMUL2 \
   vse8.v_LMUL4 \
   vse8.v_LMUL8 \
+  vsext.vf2_LMUL2SEW16 \
+  vsext.vf2_LMUL2SEW32 \
+  vsext.vf2_LMUL2SEW64 \
+  vsext.vf2_LMUL4SEW16 \
+  vsext.vf2_LMUL4SEW32 \
+  vsext.vf2_LMUL4SEW64 \
+  vsext.vf2_LMUL8SEW16 \
+  vsext.vf2_LMUL8SEW32 \
+  vsext.vf2_LMUL8SEW64 \
+  vsext.vf4_LMUL4SEW32 \
+  vsext.vf4_LMUL4SEW64 \
+  vsext.vf4_LMUL8SEW32 \
+  vsext.vf4_LMUL8SEW64 \
+  vsext.vf8_LMUL8SEW64 \
   vslide1down.vx_LMUL1SEW16 \
   vslide1down.vx_LMUL1SEW32 \
   vslide1down.vx_LMUL1SEW64 \
@@ -3362,5 +3376,19 @@ rv64uv_sc_tests = \
   vxor.vx_LMUL8SEW32 \
   vxor.vx_LMUL8SEW64 \
   vxor.vx_LMUL8SEW8 \
+  vzext.vf2_LMUL2SEW16 \
+  vzext.vf2_LMUL2SEW32 \
+  vzext.vf2_LMUL2SEW64 \
+  vzext.vf2_LMUL4SEW16 \
+  vzext.vf2_LMUL4SEW32 \
+  vzext.vf2_LMUL4SEW64 \
+  vzext.vf2_LMUL8SEW16 \
+  vzext.vf2_LMUL8SEW32 \
+  vzext.vf2_LMUL8SEW64 \
+  vzext.vf4_LMUL4SEW32 \
+  vzext.vf4_LMUL4SEW64 \
+  vzext.vf4_LMUL8SEW32 \
+  vzext.vf4_LMUL8SEW64 \
+  vzext.vf8_LMUL8SEW64 \
 
 rv64uv_ps_tests = $(addprefix rv64uv-ps-, $(rv64uv_sc_tests))
