@@ -1816,6 +1816,70 @@ rv64uv_sc_tests = \
   vmulhu.vx_LMUL8SEW32 \
   vmulhu.vx_LMUL8SEW64 \
   vmulhu.vx_LMUL8SEW8 \
+  vmv.s.x_LMUL1SEW16 \
+  vmv.s.x_LMUL1SEW32 \
+  vmv.s.x_LMUL1SEW64 \
+  vmv.s.x_LMUL1SEW8 \
+  vmv.s.x_LMUL2SEW16 \
+  vmv.s.x_LMUL2SEW32 \
+  vmv.s.x_LMUL2SEW64 \
+  vmv.s.x_LMUL2SEW8 \
+  vmv.s.x_LMUL4SEW16 \
+  vmv.s.x_LMUL4SEW32 \
+  vmv.s.x_LMUL4SEW64 \
+  vmv.s.x_LMUL4SEW8 \
+  vmv.s.x_LMUL8SEW16 \
+  vmv.s.x_LMUL8SEW32 \
+  vmv.s.x_LMUL8SEW64 \
+  vmv.s.x_LMUL8SEW8 \
+  vmv.v.i_LMUL1SEW16 \
+  vmv.v.i_LMUL1SEW32 \
+  vmv.v.i_LMUL1SEW64 \
+  vmv.v.i_LMUL1SEW8 \
+  vmv.v.i_LMUL2SEW16 \
+  vmv.v.i_LMUL2SEW32 \
+  vmv.v.i_LMUL2SEW64 \
+  vmv.v.i_LMUL2SEW8 \
+  vmv.v.i_LMUL4SEW16 \
+  vmv.v.i_LMUL4SEW32 \
+  vmv.v.i_LMUL4SEW64 \
+  vmv.v.i_LMUL4SEW8 \
+  vmv.v.i_LMUL8SEW16 \
+  vmv.v.i_LMUL8SEW32 \
+  vmv.v.i_LMUL8SEW64 \
+  vmv.v.i_LMUL8SEW8 \
+  vmv.v.v_LMUL1SEW16 \
+  vmv.v.v_LMUL1SEW32 \
+  vmv.v.v_LMUL1SEW64 \
+  vmv.v.v_LMUL1SEW8 \
+  vmv.v.v_LMUL2SEW16 \
+  vmv.v.v_LMUL2SEW32 \
+  vmv.v.v_LMUL2SEW64 \
+  vmv.v.v_LMUL2SEW8 \
+  vmv.v.v_LMUL4SEW16 \
+  vmv.v.v_LMUL4SEW32 \
+  vmv.v.v_LMUL4SEW64 \
+  vmv.v.v_LMUL4SEW8 \
+  vmv.v.v_LMUL8SEW16 \
+  vmv.v.v_LMUL8SEW32 \
+  vmv.v.v_LMUL8SEW64 \
+  vmv.v.v_LMUL8SEW8 \
+  vmv.v.x_LMUL1SEW16 \
+  vmv.v.x_LMUL1SEW32 \
+  vmv.v.x_LMUL1SEW64 \
+  vmv.v.x_LMUL1SEW8 \
+  vmv.v.x_LMUL2SEW16 \
+  vmv.v.x_LMUL2SEW32 \
+  vmv.v.x_LMUL2SEW64 \
+  vmv.v.x_LMUL2SEW8 \
+  vmv.v.x_LMUL4SEW16 \
+  vmv.v.x_LMUL4SEW32 \
+  vmv.v.x_LMUL4SEW64 \
+  vmv.v.x_LMUL4SEW8 \
+  vmv.v.x_LMUL8SEW16 \
+  vmv.v.x_LMUL8SEW32 \
+  vmv.v.x_LMUL8SEW64 \
+  vmv.v.x_LMUL8SEW8 \
   vmxnor.mm_LMUL1SEW16 \
   vmxnor.mm_LMUL1SEW32 \
   vmxnor.mm_LMUL1SEW64 \
