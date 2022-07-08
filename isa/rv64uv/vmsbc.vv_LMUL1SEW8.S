@@ -41,7 +41,11 @@ RVTEST_CODE_BEGIN
   la a1, res
   vse8.v v1, (a1)
 
-  addi x0, x1, 2
+  TEST_CASE(2, t0, 0x103f8ffef1f20, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(3, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(4, t0, 0x103f8ffefefff, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(5, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
+
 
   li t0, -1
   vsetvli t1, t0, e8,m1,ta,ma
@@ -65,7 +69,12 @@ RVTEST_CODE_BEGIN
   la a1, res
   vse8.v v1, (a1)
 
-  addi x0, x1, 2
+
+  TEST_CASE(6, t0, 0x103f8ffef1f20, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(7, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(8, t0, 0x103f8ffefefff, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(9, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
+
 
   li t0, -1
   vsetvli t1, t0, e8,m1,ta,ma
@@ -89,7 +98,12 @@ RVTEST_CODE_BEGIN
   la a1, res
   vse8.v v1, (a1)
 
-  addi x0, x1, 2
+
+  TEST_CASE(10, t0, 0x103f89f201f20, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(11, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(12, t0, 0x103f8ffefefff, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(13, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
+
 
   li t0, -1
   vsetvli t1, t0, e8,m1,ta,ma
@@ -113,7 +127,12 @@ RVTEST_CODE_BEGIN
   la a1, res
   vse8.v v1, (a1)
 
-  addi x0, x1, 2
+
+  TEST_CASE(14, t0, 0x103f89f201f20, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(15, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(16, t0, 0x103f8ffefefff, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(17, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
+
 
   li t0, -1
   vsetvli t1, t0, e8,m1,ta,ma
@@ -137,7 +156,12 @@ RVTEST_CODE_BEGIN
   la a1, res
   vse8.v v1, (a1)
 
-  addi x0, x1, 2
+
+  TEST_CASE(18, t0, 0x103f81f201f20, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(19, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(20, t0, 0x103f8ffefefff, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(21, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
+
 
   li t0, -1
   vsetvli t1, t0, e8,m1,ta,ma
@@ -161,10 +185,15 @@ RVTEST_CODE_BEGIN
   la a1, res
   vse8.v v1, (a1)
 
-  addi x0, x1, 2
+
+  TEST_CASE(22, t0, 0x103f81f201f20, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(23, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(24, t0, 0x103f8ffefefff, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(25, t0, 0x1070001000100, ld t0, 0(a1); addi a1, a1, 8)
 
 
-  TEST_CASE(2, x0, 0x0)
+
+
   TEST_PASSFAIL
 
 RVTEST_CODE_END
