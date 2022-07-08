@@ -2308,6 +2308,21 @@ rv64uv_sc_tests = \
   vrgather.vx_LMUL8SEW32 \
   vrgather.vx_LMUL8SEW64 \
   vrgather.vx_LMUL8SEW8 \
+  vrgatherei16.vv_LMUL1SEW16 \
+  vrgatherei16.vv_LMUL1SEW32 \
+  vrgatherei16.vv_LMUL1SEW64 \
+  vrgatherei16.vv_LMUL1SEW8 \
+  vrgatherei16.vv_LMUL2SEW16 \
+  vrgatherei16.vv_LMUL2SEW32 \
+  vrgatherei16.vv_LMUL2SEW64 \
+  vrgatherei16.vv_LMUL2SEW8 \
+  vrgatherei16.vv_LMUL4SEW16 \
+  vrgatherei16.vv_LMUL4SEW32 \
+  vrgatherei16.vv_LMUL4SEW64 \
+  vrgatherei16.vv_LMUL4SEW8 \
+  vrgatherei16.vv_LMUL8SEW16 \
+  vrgatherei16.vv_LMUL8SEW32 \
+  vrgatherei16.vv_LMUL8SEW64 \
   vrsub.vi_LMUL1SEW16 \
   vrsub.vi_LMUL1SEW32 \
   vrsub.vi_LMUL1SEW64 \
