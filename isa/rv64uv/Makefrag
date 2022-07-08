@@ -3363,4 +3363,4 @@ rv64uv_sc_tests = \
   vxor.vx_LMUL8SEW64 \
   vxor.vx_LMUL8SEW8 \
 
-rv64uv_p_tests = $(addprefix rv64uv-p-, $(rv64uv_sc_tests))
+rv64uv_ps_tests = $(addprefix rv64uv-ps-, $(rv64uv_sc_tests))
