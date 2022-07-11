@@ -845,6 +845,7 @@ rv64uv_sc_tests = \
   vle8.v_LMUL2 \
   vle8.v_LMUL4 \
   vle8.v_LMUL8 \
+  vlm.v \
   vlse16.v_LMUL1 \
   vlse16.v_LMUL2 \
   vlse16.v_LMUL4 \
@@ -2798,6 +2799,7 @@ rv64uv_sc_tests = \
   vsll.vx_LMUL8SEW32 \
   vsll.vx_LMUL8SEW64 \
   vsll.vx_LMUL8SEW8 \
+  vsm.v \
   vsmul.vv_LMUL1SEW16 \
   vsmul.vv_LMUL1SEW32 \
   vsmul.vv_LMUL1SEW64 \
