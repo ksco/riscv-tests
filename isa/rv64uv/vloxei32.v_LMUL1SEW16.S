@@ -59,6 +59,11 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 8
   vsetvli t1, t0, e16,m1,ta,ma
   vloxei32.v v1, (s1), v4, v0.t
@@ -69,8 +74,8 @@ RVTEST_CODE_BEGIN
   vse16.v v1, (a1)
 
 
-  TEST_CASE(6, t0, 0x40400000c0800000, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(7, t0, 0xdeadbeefcafebabe, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(6, t0, 0x40400304c080b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(7, t0, 0xdead0000cafe0000, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(8, t0, 0xabad1dea1337d00d, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(9, t0, 0xbf8003044003b0f0, ld t0, 0(a1); addi a1, a1, 8)
 
@@ -115,6 +120,11 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 8
   vsetvli t1, t0, e16,m1,ta,mu
   vloxei32.v v1, (s1), v4, v0.t
@@ -125,8 +135,8 @@ RVTEST_CODE_BEGIN
   vse16.v v1, (a1)
 
 
-  TEST_CASE(14, t0, 0x40400000c0800000, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(15, t0, 0xdeadbeefcafebabe, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(14, t0, 0x40400304c080b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(15, t0, 0xdead0000cafe0000, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(16, t0, 0xabad1dea1337d00d, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(17, t0, 0xbf8003044003b0f0, ld t0, 0(a1); addi a1, a1, 8)
 
@@ -171,6 +181,11 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 15
   vsetvli t1, t0, e16,m1,ta,ma
   vloxei32.v v1, (s1), v4, v0.t
@@ -181,10 +196,10 @@ RVTEST_CODE_BEGIN
   vse16.v v1, (a1)
 
 
-  TEST_CASE(22, t0, 0x40400000c0800000, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(23, t0, 0xdeadbeefcafebabe, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(24, t0, 0xabad1dea1337d00d, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(25, t0, 0xbf8003044003b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(22, t0, 0x40400304c080b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(23, t0, 0xdead0000cafe0000, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(24, t0, 0xabad03041337b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(25, t0, 0xbf80000040030000, ld t0, 0(a1); addi a1, a1, 8)
 
   li t0, -1
   vsetvli t1, t0, e16,m1,ta,ma
@@ -227,6 +242,11 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 15
   vsetvli t1, t0, e16,m1,ta,mu
   vloxei32.v v1, (s1), v4, v0.t
@@ -237,10 +257,10 @@ RVTEST_CODE_BEGIN
   vse16.v v1, (a1)
 
 
-  TEST_CASE(30, t0, 0x40400000c0800000, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(31, t0, 0xdeadbeefcafebabe, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(32, t0, 0xabad1dea1337d00d, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(33, t0, 0xbf8003044003b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(30, t0, 0x40400304c080b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(31, t0, 0xdead0000cafe0000, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(32, t0, 0xabad03041337b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(33, t0, 0xbf80000040030000, ld t0, 0(a1); addi a1, a1, 8)
 
   li t0, -1
   vsetvli t1, t0, e16,m1,ta,ma
@@ -283,6 +303,11 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 16
   vsetvli t1, t0, e16,m1,ta,ma
   vloxei32.v v1, (s1), v4, v0.t
@@ -293,10 +318,10 @@ RVTEST_CODE_BEGIN
   vse16.v v1, (a1)
 
 
-  TEST_CASE(38, t0, 0x40400000c0800000, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(39, t0, 0xdeadbeefcafebabe, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(40, t0, 0xabad1dea1337d00d, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(41, t0, 0xbf8003044003b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(38, t0, 0x40400304c080b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(39, t0, 0xdead0000cafe0000, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(40, t0, 0xabad03041337b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(41, t0, 0xbf80000040030000, ld t0, 0(a1); addi a1, a1, 8)
 
   li t0, -1
   vsetvli t1, t0, e16,m1,ta,ma
@@ -339,6 +364,11 @@ RVTEST_CODE_BEGIN
   vle32.v v4, (a2)
 
   
+  li t0, -1
+  vsetvli t1, t0, e8,m1,ta,ma
+  la a3, mask
+  vle8.v v0, (a3)
+
   li t0, 16
   vsetvli t1, t0, e16,m1,ta,mu
   vloxei32.v v1, (s1), v4, v0.t
@@ -349,10 +379,10 @@ RVTEST_CODE_BEGIN
   vse16.v v1, (a1)
 
 
-  TEST_CASE(46, t0, 0x40400000c0800000, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(47, t0, 0xdeadbeefcafebabe, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(48, t0, 0xabad1dea1337d00d, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(49, t0, 0xbf8003044003b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(46, t0, 0x40400304c080b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(47, t0, 0xdead0000cafe0000, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(48, t0, 0xabad03041337b0f0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(49, t0, 0xbf80000040030000, ld t0, 0(a1); addi a1, a1, 8)
 
 
 
