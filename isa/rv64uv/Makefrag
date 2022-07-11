@@ -845,6 +845,61 @@ rv64uv_sc_tests = \
   vle8.v_LMUL2 \
   vle8.v_LMUL4 \
   vle8.v_LMUL8 \
+  vlm.v \
+  vloxei16.v_LMUL1SEW16 \
+  vloxei16.v_LMUL1SEW32 \
+  vloxei16.v_LMUL1SEW64 \
+  vloxei16.v_LMUL1SEW8 \
+  vloxei16.v_LMUL2SEW16 \
+  vloxei16.v_LMUL2SEW32 \
+  vloxei16.v_LMUL2SEW64 \
+  vloxei16.v_LMUL2SEW8 \
+  vloxei16.v_LMUL4SEW16 \
+  vloxei16.v_LMUL4SEW32 \
+  vloxei16.v_LMUL4SEW64 \
+  vloxei16.v_LMUL4SEW8 \
+  vloxei16.v_LMUL8SEW16 \
+  vloxei16.v_LMUL8SEW32 \
+  vloxei16.v_LMUL8SEW64 \
+  vloxei32.v_LMUL1SEW16 \
+  vloxei32.v_LMUL1SEW32 \
+  vloxei32.v_LMUL1SEW64 \
+  vloxei32.v_LMUL1SEW8 \
+  vloxei32.v_LMUL2SEW16 \
+  vloxei32.v_LMUL2SEW32 \
+  vloxei32.v_LMUL2SEW64 \
+  vloxei32.v_LMUL2SEW8 \
+  vloxei32.v_LMUL4SEW16 \
+  vloxei32.v_LMUL4SEW32 \
+  vloxei32.v_LMUL4SEW64 \
+  vloxei32.v_LMUL8SEW32 \
+  vloxei32.v_LMUL8SEW64 \
+  vloxei64.v_LMUL1SEW16 \
+  vloxei64.v_LMUL1SEW32 \
+  vloxei64.v_LMUL1SEW64 \
+  vloxei64.v_LMUL1SEW8 \
+  vloxei64.v_LMUL2SEW16 \
+  vloxei64.v_LMUL2SEW32 \
+  vloxei64.v_LMUL2SEW64 \
+  vloxei64.v_LMUL4SEW32 \
+  vloxei64.v_LMUL4SEW64 \
+  vloxei64.v_LMUL8SEW64 \
+  vloxei8.v_LMUL1SEW16 \
+  vloxei8.v_LMUL1SEW32 \
+  vloxei8.v_LMUL1SEW64 \
+  vloxei8.v_LMUL1SEW8 \
+  vloxei8.v_LMUL2SEW16 \
+  vloxei8.v_LMUL2SEW32 \
+  vloxei8.v_LMUL2SEW64 \
+  vloxei8.v_LMUL2SEW8 \
+  vloxei8.v_LMUL4SEW16 \
+  vloxei8.v_LMUL4SEW32 \
+  vloxei8.v_LMUL4SEW64 \
+  vloxei8.v_LMUL4SEW8 \
+  vloxei8.v_LMUL8SEW16 \
+  vloxei8.v_LMUL8SEW32 \
+  vloxei8.v_LMUL8SEW64 \
+  vloxei8.v_LMUL8SEW8 \
   vlse16.v_LMUL1 \
   vlse16.v_LMUL2 \
   vlse16.v_LMUL4 \
@@ -861,6 +916,60 @@ rv64uv_sc_tests = \
   vlse8.v_LMUL2 \
   vlse8.v_LMUL4 \
   vlse8.v_LMUL8 \
+  vluxei16.v_LMUL1SEW16 \
+  vluxei16.v_LMUL1SEW32 \
+  vluxei16.v_LMUL1SEW64 \
+  vluxei16.v_LMUL1SEW8 \
+  vluxei16.v_LMUL2SEW16 \
+  vluxei16.v_LMUL2SEW32 \
+  vluxei16.v_LMUL2SEW64 \
+  vluxei16.v_LMUL2SEW8 \
+  vluxei16.v_LMUL4SEW16 \
+  vluxei16.v_LMUL4SEW32 \
+  vluxei16.v_LMUL4SEW64 \
+  vluxei16.v_LMUL4SEW8 \
+  vluxei16.v_LMUL8SEW16 \
+  vluxei16.v_LMUL8SEW32 \
+  vluxei16.v_LMUL8SEW64 \
+  vluxei32.v_LMUL1SEW16 \
+  vluxei32.v_LMUL1SEW32 \
+  vluxei32.v_LMUL1SEW64 \
+  vluxei32.v_LMUL1SEW8 \
+  vluxei32.v_LMUL2SEW16 \
+  vluxei32.v_LMUL2SEW32 \
+  vluxei32.v_LMUL2SEW64 \
+  vluxei32.v_LMUL2SEW8 \
+  vluxei32.v_LMUL4SEW16 \
+  vluxei32.v_LMUL4SEW32 \
+  vluxei32.v_LMUL4SEW64 \
+  vluxei32.v_LMUL8SEW32 \
+  vluxei32.v_LMUL8SEW64 \
+  vluxei64.v_LMUL1SEW16 \
+  vluxei64.v_LMUL1SEW32 \
+  vluxei64.v_LMUL1SEW64 \
+  vluxei64.v_LMUL1SEW8 \
+  vluxei64.v_LMUL2SEW16 \
+  vluxei64.v_LMUL2SEW32 \
+  vluxei64.v_LMUL2SEW64 \
+  vluxei64.v_LMUL4SEW32 \
+  vluxei64.v_LMUL4SEW64 \
+  vluxei64.v_LMUL8SEW64 \
+  vluxei8.v_LMUL1SEW16 \
+  vluxei8.v_LMUL1SEW32 \
+  vluxei8.v_LMUL1SEW64 \
+  vluxei8.v_LMUL1SEW8 \
+  vluxei8.v_LMUL2SEW16 \
+  vluxei8.v_LMUL2SEW32 \
+  vluxei8.v_LMUL2SEW64 \
+  vluxei8.v_LMUL2SEW8 \
+  vluxei8.v_LMUL4SEW16 \
+  vluxei8.v_LMUL4SEW32 \
+  vluxei8.v_LMUL4SEW64 \
+  vluxei8.v_LMUL4SEW8 \
+  vluxei8.v_LMUL8SEW16 \
+  vluxei8.v_LMUL8SEW32 \
+  vluxei8.v_LMUL8SEW64 \
+  vluxei8.v_LMUL8SEW8 \
   vmacc.vv_LMUL1SEW16 \
   vmacc.vv_LMUL1SEW32 \
   vmacc.vv_LMUL1SEW64 \
@@ -2798,6 +2907,7 @@ rv64uv_sc_tests = \
   vsll.vx_LMUL8SEW32 \
   vsll.vx_LMUL8SEW64 \
   vsll.vx_LMUL8SEW8 \
+  vsm.v \
   vsmul.vv_LMUL1SEW16 \
   vsmul.vv_LMUL1SEW32 \
   vsmul.vv_LMUL1SEW64 \
@@ -2830,6 +2940,60 @@ rv64uv_sc_tests = \
   vsmul.vx_LMUL8SEW32 \
   vsmul.vx_LMUL8SEW64 \
   vsmul.vx_LMUL8SEW8 \
+  vsoxei16.v_LMUL1SEW16 \
+  vsoxei16.v_LMUL1SEW32 \
+  vsoxei16.v_LMUL1SEW64 \
+  vsoxei16.v_LMUL1SEW8 \
+  vsoxei16.v_LMUL2SEW16 \
+  vsoxei16.v_LMUL2SEW32 \
+  vsoxei16.v_LMUL2SEW64 \
+  vsoxei16.v_LMUL2SEW8 \
+  vsoxei16.v_LMUL4SEW16 \
+  vsoxei16.v_LMUL4SEW32 \
+  vsoxei16.v_LMUL4SEW64 \
+  vsoxei16.v_LMUL4SEW8 \
+  vsoxei16.v_LMUL8SEW16 \
+  vsoxei16.v_LMUL8SEW32 \
+  vsoxei16.v_LMUL8SEW64 \
+  vsoxei32.v_LMUL1SEW16 \
+  vsoxei32.v_LMUL1SEW32 \
+  vsoxei32.v_LMUL1SEW64 \
+  vsoxei32.v_LMUL1SEW8 \
+  vsoxei32.v_LMUL2SEW16 \
+  vsoxei32.v_LMUL2SEW32 \
+  vsoxei32.v_LMUL2SEW64 \
+  vsoxei32.v_LMUL2SEW8 \
+  vsoxei32.v_LMUL4SEW16 \
+  vsoxei32.v_LMUL4SEW32 \
+  vsoxei32.v_LMUL4SEW64 \
+  vsoxei32.v_LMUL8SEW32 \
+  vsoxei32.v_LMUL8SEW64 \
+  vsoxei64.v_LMUL1SEW16 \
+  vsoxei64.v_LMUL1SEW32 \
+  vsoxei64.v_LMUL1SEW64 \
+  vsoxei64.v_LMUL1SEW8 \
+  vsoxei64.v_LMUL2SEW16 \
+  vsoxei64.v_LMUL2SEW32 \
+  vsoxei64.v_LMUL2SEW64 \
+  vsoxei64.v_LMUL4SEW32 \
+  vsoxei64.v_LMUL4SEW64 \
+  vsoxei64.v_LMUL8SEW64 \
+  vsoxei8.v_LMUL1SEW16 \
+  vsoxei8.v_LMUL1SEW32 \
+  vsoxei8.v_LMUL1SEW64 \
+  vsoxei8.v_LMUL1SEW8 \
+  vsoxei8.v_LMUL2SEW16 \
+  vsoxei8.v_LMUL2SEW32 \
+  vsoxei8.v_LMUL2SEW64 \
+  vsoxei8.v_LMUL2SEW8 \
+  vsoxei8.v_LMUL4SEW16 \
+  vsoxei8.v_LMUL4SEW32 \
+  vsoxei8.v_LMUL4SEW64 \
+  vsoxei8.v_LMUL4SEW8 \
+  vsoxei8.v_LMUL8SEW16 \
+  vsoxei8.v_LMUL8SEW32 \
+  vsoxei8.v_LMUL8SEW64 \
+  vsoxei8.v_LMUL8SEW8 \
   vsra.vi_LMUL1SEW16 \
   vsra.vi_LMUL1SEW32 \
   vsra.vi_LMUL1SEW64 \
@@ -3134,6 +3298,60 @@ rv64uv_sc_tests = \
   vsub.vx_LMUL8SEW32 \
   vsub.vx_LMUL8SEW64 \
   vsub.vx_LMUL8SEW8 \
+  vsuxei16.v_LMUL1SEW16 \
+  vsuxei16.v_LMUL1SEW32 \
+  vsuxei16.v_LMUL1SEW64 \
+  vsuxei16.v_LMUL1SEW8 \
+  vsuxei16.v_LMUL2SEW16 \
+  vsuxei16.v_LMUL2SEW32 \
+  vsuxei16.v_LMUL2SEW64 \
+  vsuxei16.v_LMUL2SEW8 \
+  vsuxei16.v_LMUL4SEW16 \
+  vsuxei16.v_LMUL4SEW32 \
+  vsuxei16.v_LMUL4SEW64 \
+  vsuxei16.v_LMUL4SEW8 \
+  vsuxei16.v_LMUL8SEW16 \
+  vsuxei16.v_LMUL8SEW32 \
+  vsuxei16.v_LMUL8SEW64 \
+  vsuxei32.v_LMUL1SEW16 \
+  vsuxei32.v_LMUL1SEW32 \
+  vsuxei32.v_LMUL1SEW64 \
+  vsuxei32.v_LMUL1SEW8 \
+  vsuxei32.v_LMUL2SEW16 \
+  vsuxei32.v_LMUL2SEW32 \
+  vsuxei32.v_LMUL2SEW64 \
+  vsuxei32.v_LMUL2SEW8 \
+  vsuxei32.v_LMUL4SEW16 \
+  vsuxei32.v_LMUL4SEW32 \
+  vsuxei32.v_LMUL4SEW64 \
+  vsuxei32.v_LMUL8SEW32 \
+  vsuxei32.v_LMUL8SEW64 \
+  vsuxei64.v_LMUL1SEW16 \
+  vsuxei64.v_LMUL1SEW32 \
+  vsuxei64.v_LMUL1SEW64 \
+  vsuxei64.v_LMUL1SEW8 \
+  vsuxei64.v_LMUL2SEW16 \
+  vsuxei64.v_LMUL2SEW32 \
+  vsuxei64.v_LMUL2SEW64 \
+  vsuxei64.v_LMUL4SEW32 \
+  vsuxei64.v_LMUL4SEW64 \
+  vsuxei64.v_LMUL8SEW64 \
+  vsuxei8.v_LMUL1SEW16 \
+  vsuxei8.v_LMUL1SEW32 \
+  vsuxei8.v_LMUL1SEW64 \
+  vsuxei8.v_LMUL1SEW8 \
+  vsuxei8.v_LMUL2SEW16 \
+  vsuxei8.v_LMUL2SEW32 \
+  vsuxei8.v_LMUL2SEW64 \
+  vsuxei8.v_LMUL2SEW8 \
+  vsuxei8.v_LMUL4SEW16 \
+  vsuxei8.v_LMUL4SEW32 \
+  vsuxei8.v_LMUL4SEW64 \
+  vsuxei8.v_LMUL4SEW8 \
+  vsuxei8.v_LMUL8SEW16 \
+  vsuxei8.v_LMUL8SEW32 \
+  vsuxei8.v_LMUL8SEW64 \
+  vsuxei8.v_LMUL8SEW8 \
   vwadd.vv_LMUL1SEW16 \
   vwadd.vv_LMUL1SEW32 \
   vwadd.vv_LMUL1SEW8 \
