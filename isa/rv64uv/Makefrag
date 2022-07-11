@@ -372,6 +372,54 @@ rv64uv_sc_tests = \
   vfadd.vv_LMUL4SEW64 \
   vfadd.vv_LMUL8SEW32 \
   vfadd.vv_LMUL8SEW64 \
+  vfcvt.f.x.v_LMUL1SEW32 \
+  vfcvt.f.x.v_LMUL1SEW64 \
+  vfcvt.f.x.v_LMUL2SEW32 \
+  vfcvt.f.x.v_LMUL2SEW64 \
+  vfcvt.f.x.v_LMUL4SEW32 \
+  vfcvt.f.x.v_LMUL4SEW64 \
+  vfcvt.f.x.v_LMUL8SEW32 \
+  vfcvt.f.x.v_LMUL8SEW64 \
+  vfcvt.f.xu.v_LMUL1SEW32 \
+  vfcvt.f.xu.v_LMUL1SEW64 \
+  vfcvt.f.xu.v_LMUL2SEW32 \
+  vfcvt.f.xu.v_LMUL2SEW64 \
+  vfcvt.f.xu.v_LMUL4SEW32 \
+  vfcvt.f.xu.v_LMUL4SEW64 \
+  vfcvt.f.xu.v_LMUL8SEW32 \
+  vfcvt.f.xu.v_LMUL8SEW64 \
+  vfcvt.rtz.x.f.v_LMUL1SEW32 \
+  vfcvt.rtz.x.f.v_LMUL1SEW64 \
+  vfcvt.rtz.x.f.v_LMUL2SEW32 \
+  vfcvt.rtz.x.f.v_LMUL2SEW64 \
+  vfcvt.rtz.x.f.v_LMUL4SEW32 \
+  vfcvt.rtz.x.f.v_LMUL4SEW64 \
+  vfcvt.rtz.x.f.v_LMUL8SEW32 \
+  vfcvt.rtz.x.f.v_LMUL8SEW64 \
+  vfcvt.rtz.xu.f.v_LMUL1SEW32 \
+  vfcvt.rtz.xu.f.v_LMUL1SEW64 \
+  vfcvt.rtz.xu.f.v_LMUL2SEW32 \
+  vfcvt.rtz.xu.f.v_LMUL2SEW64 \
+  vfcvt.rtz.xu.f.v_LMUL4SEW32 \
+  vfcvt.rtz.xu.f.v_LMUL4SEW64 \
+  vfcvt.rtz.xu.f.v_LMUL8SEW32 \
+  vfcvt.rtz.xu.f.v_LMUL8SEW64 \
+  vfcvt.x.f.v_LMUL1SEW32 \
+  vfcvt.x.f.v_LMUL1SEW64 \
+  vfcvt.x.f.v_LMUL2SEW32 \
+  vfcvt.x.f.v_LMUL2SEW64 \
+  vfcvt.x.f.v_LMUL4SEW32 \
+  vfcvt.x.f.v_LMUL4SEW64 \
+  vfcvt.x.f.v_LMUL8SEW32 \
+  vfcvt.x.f.v_LMUL8SEW64 \
+  vfcvt.xu.f.v_LMUL1SEW32 \
+  vfcvt.xu.f.v_LMUL1SEW64 \
+  vfcvt.xu.f.v_LMUL2SEW32 \
+  vfcvt.xu.f.v_LMUL2SEW64 \
+  vfcvt.xu.f.v_LMUL4SEW32 \
+  vfcvt.xu.f.v_LMUL4SEW64 \
+  vfcvt.xu.f.v_LMUL8SEW32 \
+  vfcvt.xu.f.v_LMUL8SEW64 \
   vfdiv.vf_LMUL1SEW32 \
   vfdiv.vf_LMUL1SEW64 \
   vfdiv.vf_LMUL2SEW32 \
@@ -696,6 +744,27 @@ rv64uv_sc_tests = \
   vfwadd.wv_LMUL1SEW32 \
   vfwadd.wv_LMUL2SEW32 \
   vfwadd.wv_LMUL4SEW32 \
+  vfwcvt.f.f.v_LMUL1SEW32 \
+  vfwcvt.f.f.v_LMUL2SEW32 \
+  vfwcvt.f.f.v_LMUL4SEW32 \
+  vfwcvt.f.x.v_LMUL1SEW32 \
+  vfwcvt.f.x.v_LMUL2SEW32 \
+  vfwcvt.f.x.v_LMUL4SEW32 \
+  vfwcvt.f.xu.v_LMUL1SEW32 \
+  vfwcvt.f.xu.v_LMUL2SEW32 \
+  vfwcvt.f.xu.v_LMUL4SEW32 \
+  vfwcvt.rtz.x.f.v_LMUL1SEW32 \
+  vfwcvt.rtz.x.f.v_LMUL2SEW32 \
+  vfwcvt.rtz.x.f.v_LMUL4SEW32 \
+  vfwcvt.rtz.xu.f.v_LMUL1SEW32 \
+  vfwcvt.rtz.xu.f.v_LMUL2SEW32 \
+  vfwcvt.rtz.xu.f.v_LMUL4SEW32 \
+  vfwcvt.x.f.v_LMUL1SEW32 \
+  vfwcvt.x.f.v_LMUL2SEW32 \
+  vfwcvt.x.f.v_LMUL4SEW32 \
+  vfwcvt.xu.f.v_LMUL1SEW32 \
+  vfwcvt.xu.f.v_LMUL2SEW32 \
+  vfwcvt.xu.f.v_LMUL4SEW32 \
   vfwmacc.vf_LMUL1SEW32 \
   vfwmacc.vf_LMUL2SEW32 \
   vfwmacc.vf_LMUL4SEW32 \
