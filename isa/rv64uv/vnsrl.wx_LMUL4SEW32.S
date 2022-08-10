@@ -20,7 +20,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
@@ -57,7 +57,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
@@ -95,7 +95,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
@@ -138,7 +138,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
@@ -181,7 +181,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
@@ -219,7 +219,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
@@ -257,7 +257,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
@@ -300,7 +300,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
@@ -343,7 +343,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
@@ -381,7 +381,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
@@ -419,7 +419,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
@@ -462,7 +462,7 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e32,m4,ta,ma
+  vsetvli t1, t0, e64,m8,ta,ma
   la a2, tdat
   vle32.v v8, (a2)
 
