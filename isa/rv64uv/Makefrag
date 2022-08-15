@@ -644,6 +644,14 @@ rv64uv_sc_tests = \
   vfrdiv.vf_LMUL4SEW64 \
   vfrdiv.vf_LMUL8SEW32 \
   vfrdiv.vf_LMUL8SEW64 \
+  vfrec7.v_LMUL1SEW32 \
+  vfrec7.v_LMUL1SEW64 \
+  vfrec7.v_LMUL2SEW32 \
+  vfrec7.v_LMUL2SEW64 \
+  vfrec7.v_LMUL4SEW32 \
+  vfrec7.v_LMUL4SEW64 \
+  vfrec7.v_LMUL8SEW32 \
+  vfrec7.v_LMUL8SEW64 \
   vfredmax.vs_LMUL1SEW32 \
   vfredmax.vs_LMUL1SEW64 \
   vfredmax.vs_LMUL2SEW32 \
@@ -676,6 +684,14 @@ rv64uv_sc_tests = \
   vfredusum.vs_LMUL4SEW64 \
   vfredusum.vs_LMUL8SEW32 \
   vfredusum.vs_LMUL8SEW64 \
+  vfrsqrt7.v_LMUL1SEW32 \
+  vfrsqrt7.v_LMUL1SEW64 \
+  vfrsqrt7.v_LMUL2SEW32 \
+  vfrsqrt7.v_LMUL2SEW64 \
+  vfrsqrt7.v_LMUL4SEW32 \
+  vfrsqrt7.v_LMUL4SEW64 \
+  vfrsqrt7.v_LMUL8SEW32 \
+  vfrsqrt7.v_LMUL8SEW64 \
   vfsgnj.vf_LMUL1SEW32 \
   vfsgnj.vf_LMUL1SEW64 \
   vfsgnj.vf_LMUL2SEW32 \
@@ -740,6 +756,14 @@ rv64uv_sc_tests = \
   vfslide1up.vf_LMUL4SEW64 \
   vfslide1up.vf_LMUL8SEW32 \
   vfslide1up.vf_LMUL8SEW64 \
+  vfsqrt.v_LMUL1SEW32 \
+  vfsqrt.v_LMUL1SEW64 \
+  vfsqrt.v_LMUL2SEW32 \
+  vfsqrt.v_LMUL2SEW64 \
+  vfsqrt.v_LMUL4SEW32 \
+  vfsqrt.v_LMUL4SEW64 \
+  vfsqrt.v_LMUL8SEW32 \
+  vfsqrt.v_LMUL8SEW64 \
   vfsub.vf_LMUL1SEW32 \
   vfsub.vf_LMUL1SEW64 \
   vfsub.vf_LMUL2SEW32 \
