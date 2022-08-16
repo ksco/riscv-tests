@@ -556,6 +556,22 @@ rv64uv_sc_tests = \
   vfmul.vv_LMUL4SEW64 \
   vfmul.vv_LMUL8SEW32 \
   vfmul.vv_LMUL8SEW64 \
+  vfmv.s.f_LMUL1SEW32 \
+  vfmv.s.f_LMUL1SEW64 \
+  vfmv.s.f_LMUL2SEW32 \
+  vfmv.s.f_LMUL2SEW64 \
+  vfmv.s.f_LMUL4SEW32 \
+  vfmv.s.f_LMUL4SEW64 \
+  vfmv.s.f_LMUL8SEW32 \
+  vfmv.s.f_LMUL8SEW64 \
+  vfmv.v.f_LMUL1SEW32 \
+  vfmv.v.f_LMUL1SEW64 \
+  vfmv.v.f_LMUL2SEW32 \
+  vfmv.v.f_LMUL2SEW64 \
+  vfmv.v.f_LMUL4SEW32 \
+  vfmv.v.f_LMUL4SEW64 \
+  vfmv.v.f_LMUL8SEW32 \
+  vfmv.v.f_LMUL8SEW64 \
   vfncvt.f.f.w_LMUL1SEW32 \
   vfncvt.f.f.w_LMUL2SEW32 \
   vfncvt.f.f.w_LMUL4SEW32 \
