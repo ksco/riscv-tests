@@ -20,9 +20,9 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -45,9 +45,9 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -71,9 +71,9 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -102,9 +102,9 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -133,9 +133,9 @@ RVTEST_CODE_BEGIN
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -154,14 +154,14 @@ RVTEST_CODE_BEGIN
 
   TEST_CASE(18, t0, 0x80000000fffc, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(19, t0, 0x80008000f7ffffff, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(20, t0, 0x0, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(21, t0, 0x1000000000000, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(20, t0, 0x80000000fffc, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(21, t0, 0x18000f7ffffff, ld t0, 0(a1); addi a1, a1, 8)
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -180,14 +180,14 @@ RVTEST_CODE_BEGIN
 
   TEST_CASE(22, t0, 0x80000000fffc, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(23, t0, 0x80008000f7ffffff, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(24, t0, 0x0, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(25, t0, 0x1000000000000, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(24, t0, 0x80000000fffc, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(25, t0, 0x18000f7ffffff, ld t0, 0(a1); addi a1, a1, 8)
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -211,14 +211,14 @@ RVTEST_CODE_BEGIN
 
   TEST_CASE(26, t0, 0x80000003fffc, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(27, t0, 0x80000007ffff, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(28, t0, 0xffff0000efff0000, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(29, t0, 0x1000000010000, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(28, t0, 0xffff8000effffffc, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(29, t0, 0x180000001ffff, ld t0, 0(a1); addi a1, a1, 8)
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -242,14 +242,14 @@ RVTEST_CODE_BEGIN
 
   TEST_CASE(30, t0, 0x80000003fffc, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(31, t0, 0x80000007ffff, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(32, t0, 0xffff0000efff0000, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(33, t0, 0x1000000010000, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(32, t0, 0xffff8000effffffc, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(33, t0, 0x180000001ffff, ld t0, 0(a1); addi a1, a1, 8)
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -268,14 +268,14 @@ RVTEST_CODE_BEGIN
 
   TEST_CASE(34, t0, 0x80000000fffc, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(35, t0, 0x80008000f7ffffff, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(36, t0, 0x0, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(37, t0, 0x0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(36, t0, 0x80000000fffc, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(37, t0, 0x80008000f7ffffff, ld t0, 0(a1); addi a1, a1, 8)
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -294,14 +294,14 @@ RVTEST_CODE_BEGIN
 
   TEST_CASE(38, t0, 0x80000000fffc, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(39, t0, 0x80008000f7ffffff, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(40, t0, 0x0, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(41, t0, 0x0, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(40, t0, 0x80000000fffc, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(41, t0, 0x80008000f7ffffff, ld t0, 0(a1); addi a1, a1, 8)
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -325,14 +325,14 @@ RVTEST_CODE_BEGIN
 
   TEST_CASE(42, t0, 0x80000003fffc, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(43, t0, 0x80000007ffff, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(44, t0, 0xffff0000efff0000, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(45, t0, 0x1000000010000, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(44, t0, 0xffff8000effffffc, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(45, t0, 0x180000001ffff, ld t0, 0(a1); addi a1, a1, 8)
 
 
   li t0, -1
-  vsetvli t1, t0, e16,m1,ta,ma
+  vsetvli t1, t0, e32,m2,ta,ma
   la a2, tdat
-  vle16.v v2, (a2)
+  vle32.v v2, (a2)
 
   vsetvli t1, t0, e16,m1,ta,ma
   vle16.v v1, (a2)
@@ -356,8 +356,8 @@ RVTEST_CODE_BEGIN
 
   TEST_CASE(46, t0, 0x80000003fffc, ld t0, 0(a1); addi a1, a1, 8)
   TEST_CASE(47, t0, 0x80000007ffff, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(48, t0, 0xffff0000efff0000, ld t0, 0(a1); addi a1, a1, 8)
-  TEST_CASE(49, t0, 0x1000000010000, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(48, t0, 0xffff8000effffffc, ld t0, 0(a1); addi a1, a1, 8)
+  TEST_CASE(49, t0, 0x180000001ffff, ld t0, 0(a1); addi a1, a1, 8)
 
 
 
